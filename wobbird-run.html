@@ -42,7 +42,7 @@
 <main>
 
 <h1>개인정보처리방침</h1>
-<p class="meta">Wobbird Run · 시행일 2026년 9월 5일 · 최종 수정 2026년 9월 12일</p>
+<p class="meta">Wobbird Run · 시행일 2026년 9월 5일 · 최종 수정 2026년 9월 13일</p>
 
 <div class="box">
   <strong>요약.</strong> 이 앱은 회원가입이 없고, 게임 기록을 서버로 보내지 않습니다.
@@ -65,9 +65,19 @@
   사진·위치 정보를 요구하지 않으며, 기기에서 그런 정보를 읽지 않습니다.
 </p>
 <p>
-  앱이 요청하는 시스템 권한은 <code>INTERNET</code>(광고를 받아오고 구매 내역을
-  확인하는 데 씁니다)과 <code>com.android.vending.BILLING</code>(구글 플레이
-  결제를 쓰기 위한 권한), 둘뿐입니다. 둘 다 개인정보를 읽는 권한이 아닙니다.
+  앱이 사용하는 시스템 권한은 아래와 같습니다. 모두 설치할 때 자동으로 부여되는
+  일반 권한이며, <strong>개인정보(연락처·사진·위치·마이크 등)를 읽는 권한은
+  없습니다.</strong>
+</p>
+<ul>
+  <li><code>INTERNET</code> — 광고를 받아오고 구매 내역을 확인합니다</li>
+  <li><code>com.android.vending.BILLING</code> — 구글 플레이 결제를 사용합니다</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — 인터넷 연결 여부를 확인합니다 (구글 광고 SDK)</li>
+  <li><code>WAKE_LOCK</code> — 광고가 재생되는 동안 화면이 꺼지지 않게 합니다 (구글 광고 SDK)</li>
+  <li><code>FOREGROUND_SERVICE</code> — 광고 SDK의 내부 작업을 관리합니다 (구글 광고 SDK)</li>
+  <li>앱 내부 전용 권한 한 가지 — 안드로이드 빌드 도구가 자동으로 추가하며, 다른 앱이 이 앱의 내부 신호를 가로채지 못하게 합니다</li>
+</ul>
+<p>
 </p>
 <p>
   이 앱은 <strong>안드로이드 광고 ID 권한을 빌드에서 제거했습니다</strong>
@@ -112,9 +122,19 @@
   등급의 광고만 표시됩니다.
 </p>
 <p>
-  광고를 전달하고 부정 클릭을 막기 위해 구글이 다음을 처리할 수 있습니다:
-  기기 종류와 운영체제 정보, 대략적인 위치(IP 기반 국가 수준), 광고 노출 및
-  시청 기록.
+  광고를 전달하고, 광고 성과를 분석하고, 부정 클릭을 막기 위해 구글 광고 SDK가
+  다음을 수집해 구글로 보냅니다:
+</p>
+<ul>
+  <li>IP 주소와 그로부터 추정한 대략적인 위치(국가 수준)</li>
+  <li>기기 종류와 운영체제 정보</li>
+  <li>광고 노출 · 시청 · 클릭 기록</li>
+  <li>앱 비정상 종료 기록과 성능 진단 정보</li>
+  <li><strong>앱 세트 ID</strong> — 같은 개발자의 앱들 안에서만 쓰이는 식별자입니다.
+      광고 ID와 다르며, 다른 회사의 앱과 연결되지 않습니다</li>
+</ul>
+<p>
+  모든 데이터는 전송 중에 암호화(TLS)됩니다.
 </p>
 <p>
   이 정보는 구글이 수집하고 처리하며, 개발자는 개별 이용자의 정보를 받지도
@@ -159,7 +179,8 @@
 <p>
   앱은 아동을 포함한 어떤 이용자에게서도 <strong>개인정보를 수집하지
   않습니다.</strong> 모든 광고 요청을 아동 대상으로 처리하므로 맞춤 광고가
-  쓰이지 않고, 광고 식별자도 수집되지 않습니다(위 4항).
+  쓰이지 않고, 광고 ID도 수집되지 않습니다. 광고 SDK가 보내는 정보는 위 4항에
+  적은 것뿐입니다.
 </p>
 <p>
   보호자께서 자녀의 정보와 관련해 궁금한 점이 있으시면 아래 연락처로 알려
@@ -179,7 +200,7 @@
 
 <div class="lang-sep">
 <h1>Privacy Policy</h1>
-<p class="meta">Wobbird Run · Effective 5 September 2026 · Last updated 12 September 2026</p>
+<p class="meta">Wobbird Run · Effective 5 September 2026 · Last updated 13 September 2026</p>
 
 <div class="box">
   <strong>Summary.</strong> This app has no accounts and sends no gameplay data to
@@ -202,9 +223,19 @@
   name, email, phone number, address, contacts, photos, or location.
 </p>
 <p>
-  It requests two Android permissions: <code>INTERNET</code> (to load ads and
-  confirm purchases) and <code>com.android.vending.BILLING</code> (required to
-  use Google Play Billing). Neither grants access to personal data.
+  The app uses the following Android permissions. All are normal permissions
+  granted at install time; <strong>none grants access to personal data</strong>
+  (contacts, photos, location, microphone and so on).
+</p>
+<ul>
+  <li><code>INTERNET</code> — to load ads and confirm purchases</li>
+  <li><code>com.android.vending.BILLING</code> — to use Google Play Billing</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — to check whether the device is online (Google Mobile Ads SDK)</li>
+  <li><code>WAKE_LOCK</code> — to keep the screen on while an ad plays (Google Mobile Ads SDK)</li>
+  <li><code>FOREGROUND_SERVICE</code> — for the ads SDK's internal task management (Google Mobile Ads SDK)</li>
+  <li>One app-internal permission — added automatically by the Android build tools so other apps cannot intercept this app's internal signals</li>
+</ul>
+<p>
 </p>
 <p>
   The app <strong>removes the Android advertising ID permission</strong> from its
@@ -244,9 +275,19 @@
   identifier is sent, and only family-safe ads are shown.
 </p>
 <p>
-  To deliver ads and prevent fraud, Google may process device and OS information,
-  approximate (country-level, IP-based) location, and records of ad impressions
-  and views. This data is collected and processed by Google; the developer
+  To deliver ads, measure ad performance and prevent fraud, the Google Mobile Ads
+  SDK collects the following and sends it to Google:
+</p>
+<ul>
+  <li>IP address and the approximate (country-level) location derived from it</li>
+  <li>Device type and operating system information</li>
+  <li>Records of ad impressions, views and clicks</li>
+  <li>App crash logs and performance diagnostics</li>
+  <li><strong>App set ID</strong> — an identifier shared only across apps from the
+      same developer. It is not the advertising ID and cannot link to other companies' apps</li>
+</ul>
+<p>
+  All of this data is encrypted in transit (TLS). It is collected and processed by Google; the developer
   neither receives nor can view any individual user's data. See
   <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from partner sites</a> and the
   <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
@@ -285,7 +326,8 @@
 <p>
   It collects <strong>no personal information from any user</strong>, children
   included. Every ad request is child-directed, so no personalised advertising is
-  used and no advertising identifier is collected (see section 4).
+  used and no advertising ID is collected. The only data the ads SDK sends is listed
+  in section 4.
 </p>
 <p>
   Parents and guardians with questions about their child's data may contact the
