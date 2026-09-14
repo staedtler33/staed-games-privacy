@@ -107,8 +107,9 @@
   「광고 없애기」를 사면 배너 광고와 전면 광고가 모두 사라집니다.
 </p>
 <p>
-  광고를 전달하고 부정 클릭을 막기 위해 구글이 다음 정보를 처리할 수 있습니다:
-  광고 ID, 대략적인 위치(IP 주소 기반), 기기 종류와 운영체제 정보, 광고 노출·클릭 기록.
+  광고를 전달하고, 광고 성과를 측정·분석하고, 부정 클릭을 막기 위해 구글 광고 SDK가 다음 정보를 처리할 수 있습니다:
+  광고 ID와 앱 세트 ID, 대략적인 위치(IP 주소 기반), 기기 종류와 운영체제 정보,
+  광고 노출·클릭과 앱 실행 같은 앱과의 상호작용, 앱과 SDK의 성능 진단 정보(실행 시간 등).
   이 정보는 구글이 수집하고 처리하며, 개발자는 개별 이용자의 정보를 받거나 열람하지 않습니다.
 </p>
 <p>광고는 <strong>전체이용가(G) 등급</strong>만 받도록 설정되어 있습니다.</p>
@@ -215,9 +216,10 @@
   Buying "Remove Ads" removes both banner and full-screen ads.
 </p>
 <p>
-  To deliver ads and prevent fraud, Google may process: the advertising ID, approximate
-  location (based on IP address), device type and operating system, and ad impressions and
-  clicks. This data is collected and processed by Google; the developer neither receives
+  To deliver ads, measure and analyze ad performance, and prevent fraud, Google's ads SDK may
+  process: the advertising ID and app set ID, approximate location (based on IP address), device
+  type and operating system, interactions with the app such as ad impressions, clicks and app
+  launches, and diagnostic information about app and SDK performance (such as launch time). This data is collected and processed by Google; the developer neither receives
   nor can view any individual user's data.
 </p>
 <p>Ads are limited to the <strong>G (general audiences)</strong> content rating.</p>
@@ -327,8 +329,9 @@
   「広告を消す」を購入すると、バナー広告と全画面広告の両方が消えます。
 </p>
 <p>
-  広告の配信と不正クリックの防止のため、Google が次の情報を扱うことがあります：
-  広告 ID、おおよその位置（IP アドレスに基づく）、端末の種類と OS、広告の表示・クリックの記録。
+  広告の配信、広告の成果の測定・分析、不正クリックの防止のため、Google の広告 SDK が次の情報を扱うことがあります：
+  広告 ID とアプリセット ID、おおよその位置（IP アドレスに基づく）、端末の種類と OS、
+  広告の表示・クリックやアプリの起動などアプリとのやり取り、アプリと SDK の動作に関する診断情報（起動時間など）。
   これらは Google が収集・処理するもので、開発者が個々の利用者の情報を受け取ったり見たりすることはありません。
 </p>
 <p>広告は<strong>全年齢（G）区分</strong>のものだけを受け取るよう設定しています。</p>
@@ -433,8 +436,9 @@
   購買「移除廣告」後，橫幅廣告與全螢幕廣告都會消失。
 </p>
 <p>
-  為了投放廣告並防止無效點擊，Google 可能處理以下資訊：廣告 ID、概略位置（依 IP 位址判斷）、
-  裝置類型與作業系統、廣告曝光與點擊紀錄。這些資訊由 Google 蒐集與處理，
+  為了投放廣告、衡量與分析廣告成效並防止無效點擊，Google 廣告 SDK 可能處理以下資訊：廣告 ID 與應用程式集 ID、
+  概略位置（依 IP 位址判斷）、裝置類型與作業系統、廣告曝光與點擊及開啟應用程式等互動紀錄、
+  應用程式與 SDK 的效能診斷資訊（例如啟動時間）。這些資訊由 Google 蒐集與處理，
   開發者不會取得或查看任何個別使用者的資料。
 </p>
 <p>廣告僅限<strong>普遍級（G）</strong>內容。</p>
@@ -542,9 +546,11 @@
   anuncios a pantalla completa.
 </p>
 <p>
-  Para mostrar anuncios y evitar fraudes, Google puede tratar: el ID de publicidad, la ubicación
-  aproximada (según la dirección IP), el tipo de dispositivo y el sistema operativo, y las
-  impresiones y clics en anuncios. Estos datos los recoge y trata Google; el desarrollador no
+  Para mostrar anuncios, medir y analizar su rendimiento y evitar fraudes, el SDK de anuncios de
+  Google puede tratar: el ID de publicidad y el ID de conjunto de aplicaciones, la ubicación
+  aproximada (según la dirección IP), el tipo de dispositivo y el sistema operativo, las
+  interacciones con la aplicación como impresiones, clics y aperturas, y datos de diagnóstico sobre
+  el rendimiento de la aplicación y del SDK (como el tiempo de inicio). Estos datos los recoge y trata Google; el desarrollador no
   recibe ni puede ver los datos de ningún usuario concreto.
 </p>
 <p>Los anuncios se limitan a la clasificación <strong>G (todos los públicos)</strong>.</p>
@@ -657,9 +663,11 @@
   Banner- als auch bildschirmfüllende Anzeigen.
 </p>
 <p>
-  Zur Auslieferung von Anzeigen und zur Betrugsverhinderung kann Google verarbeiten: die
-  Werbe-ID, den ungefähren Standort (anhand der IP-Adresse), Gerätetyp und Betriebssystem sowie
-  Anzeigenaufrufe und -klicks. Diese Daten werden von Google erhoben und verarbeitet; der
+  Zur Auslieferung von Anzeigen, zur Messung und Analyse der Anzeigenleistung und zur
+  Betrugsverhinderung kann das Anzeigen-SDK von Google verarbeiten: die Werbe-ID und die
+  App-Set-ID, den ungefähren Standort (anhand der IP-Adresse), Gerätetyp und Betriebssystem,
+  Interaktionen mit der App wie Anzeigenaufrufe, Klicks und App-Starts sowie Diagnosedaten zur
+  Leistung von App und SDK (etwa die Startzeit). Diese Daten werden von Google erhoben und verarbeitet; der
   Entwickler erhält keine Daten einzelner Nutzer und kann sie auch nicht einsehen.
 </p>
 <p>Anzeigen sind auf die Einstufung <strong>G (für alle Altersgruppen)</strong> beschränkt.</p>
@@ -772,9 +780,12 @@
   et les publicités plein écran.
 </p>
 <p>
-  Pour diffuser les annonces et prévenir la fraude, Google peut traiter : l’identifiant
-  publicitaire, la position approximative (d’après l’adresse IP), le type d’appareil et le
-  système d’exploitation, ainsi que les affichages et clics sur les annonces. Ces données sont
+  Pour diffuser les annonces, mesurer et analyser leurs performances et prévenir la fraude, le SDK
+  publicitaire de Google peut traiter : l’identifiant publicitaire et l’identifiant de groupe
+  d’applications, la position approximative (d’après l’adresse IP), le type d’appareil et le
+  système d’exploitation, les interactions avec l’application comme les affichages, clics et
+  lancements, ainsi que des données de diagnostic sur les performances de l’application et du SDK
+  (comme le temps de lancement). Ces données sont
   collectées et traitées par Google ; le développeur ne reçoit ni ne peut consulter les données
   d’aucun utilisateur.
 </p>
@@ -886,9 +897,11 @@
   Ao comprar “Remover anúncios”, somem tanto os banners quanto os anúncios em tela cheia.
 </p>
 <p>
-  Para exibir anúncios e evitar fraudes, o Google pode tratar: o ID de publicidade, a localização
-  aproximada (com base no endereço IP), o tipo de aparelho e o sistema operacional, e as
-  impressões e cliques em anúncios. Esses dados são coletados e tratados pelo Google; o
+  Para exibir anúncios, medir e analisar o desempenho deles e evitar fraudes, o SDK de anúncios do
+  Google pode tratar: o ID de publicidade e o ID do conjunto de apps, a localização aproximada (com
+  base no endereço IP), o tipo de aparelho e o sistema operacional, as interações com o aplicativo,
+  como impressões, cliques e aberturas, e dados de diagnóstico sobre o desempenho do aplicativo e do
+  SDK (como o tempo de abertura). Esses dados são coletados e tratados pelo Google; o
   desenvolvedor não recebe nem consegue ver os dados de nenhum usuário.
 </p>
 <p>Os anúncios são limitados à classificação <strong>G (livre para todos os públicos)</strong>.</p>
