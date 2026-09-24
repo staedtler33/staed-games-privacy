@@ -58,7 +58,7 @@
 <!-- ───────────────────────── 한국어 ───────────────────────── -->
 <section id="ko" lang="ko">
 <h1>개인정보처리방침</h1>
-<p class="meta">추억 게임 보따리 (Tamona) · 시행일 2026년 9월 14일</p>
+<p class="meta">추억 게임 보따리 (Tamona) · 시행일 2026년 9월 24일</p>
 
 <div class="box">
   <strong>요약.</strong> 이 앱에는 회원가입·로그인·서버가 없습니다. 게임 기록과 설정은
@@ -95,6 +95,11 @@
   <tr><td>광고 간격</td><td>처음 켠 시각, 앞 전면 광고 뒤로 끝낸 판 수, 앞 전면 광고를 보인 시각 (전면 광고를 드물게 보이기 위한 것)</td></tr>
 </table></div>
 <p>이름·계정·기기 식별자 같은 신원 정보는 담기지 않습니다.</p>
+<p>
+  다만 안드로이드의 <strong>구글 자동 백업</strong>이 켜져 있으면, 안드로이드가 이 기록을 이용자의 구글 계정 저장 공간에
+  백업해 둘 수 있습니다. 그래서 앱을 지웠다가 다시 설치하거나 새 기기로 옮기면 기록이 되살아날 수 있습니다.
+  이 백업은 구글이 이용자의 계정 안에 보관하며, 개발자는 볼 수 없습니다.
+</p>
 
 <h2>4. 제3자 서비스</h2>
 
@@ -103,7 +108,7 @@
   이 앱은 홈 화면과 게임 화면의 맨 위에 <strong>배너 광고</strong>를 보여 줍니다.
   또 한 판을 끝내고 결과 창의 단추를 누른 뒤에 가끔(세 판에 한 번 이하, 앞 광고와 5분 넘게 떨어져서)
   화면 전체를 덮는 <strong>전면 광고</strong>가 나올 수 있으며, 광고의 닫기 단추로 닫을 수 있습니다.
-  게임을 하는 도중이나 앱을 켤 때는 전면 광고가 나오지 않습니다.
+  앱을 처음 켠 날(처음 켠 뒤 24시간)에는 전면 광고가 나오지 않으며, 게임을 하는 도중이나 앱을 켤 때도 나오지 않습니다.
   「광고 없애기」를 사면 배너 광고와 전면 광고가 모두 사라집니다.
 </p>
 <p>
@@ -127,7 +132,7 @@
 <p>
   앱 안에서 <strong>「광고 없애기」</strong> 하나를 살 수 있습니다. 한 번 사면 끝이며 정기 결제가 아닙니다.
   결제는 전적으로 구글 플레이가 처리하며, <strong>개발자는 카드 번호나 결제 수단 정보를 받지 않습니다.</strong>
-  앱은 구글에게 이 상품을 샀는지만 확인합니다.
+  앱은 구글에게 이 상품을 샀는지만 확인하고, 인터넷이 없을 때를 위해 산 기록만 기기 안에 적어 둡니다.
 </p>
 
 <h2>5. 권한</h2>
@@ -136,8 +141,8 @@
   <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>광고를 불러오고 구매를 확인할 때</td></tr>
   <tr><td><code>com.android.vending.BILLING</code></td><td>구글 플레이 결제</td></tr>
   <tr><td><code>VIBRATE</code></td><td>버튼을 누를 때의 진동</td></tr>
-  <tr><td><code>MODIFY_AUDIO_SETTINGS</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>효과음·배경음악 재생 (소리·광고 라이브러리가 쓰는 시스템 권한)</td></tr>
-  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code></td><td>구글 애드몹의 광고 ID·안드로이드 광고 서비스</td></tr>
+  <tr><td><code>MODIFY_AUDIO_SETTINGS</code></td><td>효과음·배경음악 소리 크기 조절</td></tr>
+  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>광고·결제 라이브러리가 쓰는 권한(광고 ID, 안드로이드 광고 서비스, 화면 켜 두기, 백그라운드 작업). 구글 애드몹과 구글 플레이 결제가 광고를 보이고 구매를 처리하는 데 쓰며, 앱이 직접 쓰지는 않습니다</td></tr>
 </table></div>
 <p>카메라·마이크·연락처·사진·위치 권한은 요구하지 않습니다.</p>
 
@@ -146,8 +151,9 @@
 <ul>
   <li><strong>앱 삭제</strong> — 저장된 내용이 함께 지워집니다.</li>
   <li><strong>설정 &gt; 애플리케이션 &gt; 추억 게임 보따리 &gt; 저장공간 &gt; 데이터 삭제</strong> — 앱은 남기고 기록만 지웁니다.</li>
+  <li><strong>구글 자동 백업</strong> — 백업이 켜져 있으면 앱을 다시 설치할 때 기록이 되살아날 수 있습니다. 원하지 않으면 안드로이드 <em>설정 &gt; Google &gt; 백업</em>에서 끄거나, 앱 안의 설정에서 기록을 먼저 지우십시오.</li>
 </ul>
-<p>개발자는 이용자의 데이터를 보관하지 않으므로 따로 삭제를 요청할 대상이 없습니다. 구글이 처리한 광고·결제 정보는 구글의 정책을 따릅니다.</p>
+<p>개발자는 이용자의 데이터를 보관하지 않으므로 따로 삭제를 요청할 대상이 없습니다. 구글이 처리한 광고·결제 정보와 구글 계정의 백업은 구글의 정책을 따릅니다.</p>
 
 <h2>7. 아동에 관하여</h2>
 <p>
@@ -166,7 +172,7 @@
 <!-- ───────────────────────── English ───────────────────────── -->
 <section id="en" lang="en" class="lang-sep">
 <h1>Privacy Policy</h1>
-<p class="meta">Tamona · Effective 14 September 2026</p>
+<p class="meta">Tamona · Effective 24 September 2026</p>
 
 <div class="box">
   <strong>Summary.</strong> This app has no sign-up, no login, and no server. Your game
@@ -203,6 +209,11 @@
   <tr><td>Ad spacing</td><td>When the app was first opened, games finished since the last full-screen ad, and when that ad was shown (used to keep full-screen ads rare)</td></tr>
 </table></div>
 <p>No names, accounts, or device identifiers are included.</p>
+<p>
+  However, if Android's <strong>Google automatic backup</strong> is turned on, Android may back up
+  these records to your Google account storage, so they can come back after you reinstall the app
+  or move to a new device. That backup is kept by Google in your account and is not visible to the developer.
+</p>
 
 <h2>4. Third-party services</h2>
 
@@ -212,7 +223,8 @@
   screens. After you finish a game and press a button on the result screen, a
   <strong>full-screen (interstitial) ad</strong> may occasionally appear (no more than once every
   three games, and at least five minutes apart); you can close it with the ad's close button.
-  Full-screen ads never appear during a game or when the app starts.
+  Full-screen ads never appear on the first day after you first open the app (the first 24 hours),
+  during a game, or when the app starts.
   Buying "Remove Ads" removes both banner and full-screen ads.
 </p>
 <p>
@@ -240,7 +252,8 @@
   The app sells a single item, <strong>"Remove Ads"</strong>. It is a one-time purchase, not
   a subscription. Payment is handled entirely by Google Play;
   <strong>the developer never receives card numbers or payment details.</strong>
-  The app only asks Google whether this item has been purchased.
+  The app only asks Google whether this item has been purchased, and keeps just that record on
+  your device for when you are offline.
 </p>
 
 <h2>5. Permissions</h2>
@@ -249,8 +262,8 @@
   <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Loading ads and confirming purchases</td></tr>
   <tr><td><code>com.android.vending.BILLING</code></td><td>Google Play Billing</td></tr>
   <tr><td><code>VIBRATE</code></td><td>Vibration when you tap buttons</td></tr>
-  <tr><td><code>MODIFY_AUDIO_SETTINGS</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Playing sound effects and music (system permissions used by the audio and ad libraries)</td></tr>
-  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code></td><td>Advertising ID and Android ad services for Google AdMob</td></tr>
+  <tr><td><code>MODIFY_AUDIO_SETTINGS</code></td><td>Adjusting the volume of sound effects and music</td></tr>
+  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Permissions declared by the ad and billing libraries (advertising ID, Android ad services, keeping the device awake, background work). Google AdMob and Google Play Billing use them to show ads and process the purchase; the app does not use them directly</td></tr>
 </table></div>
 <p>No camera, microphone, contacts, photos, or location permissions are requested.</p>
 
@@ -259,8 +272,9 @@
 <ul>
   <li><strong>Uninstalling the app</strong> — stored data is deleted with it.</li>
   <li><strong>Settings &gt; Apps &gt; Tamona &gt; Storage &gt; Clear data</strong> — keeps the app but resets its records.</li>
+  <li><strong>Google automatic backup</strong> — if backup is on, your records may come back when you reinstall the app. If you do not want this, turn it off in Android <em>Settings &gt; Google &gt; Backup</em>, or clear the records first in the app's settings.</li>
 </ul>
-<p>The developer holds none of your data, so there is nothing to request deletion of. Ad and payment data processed by Google is governed by Google's policies.</p>
+<p>The developer holds none of your data, so there is nothing to request deletion of. Ad and payment data processed by Google, and backups in your Google account, are governed by Google's policies.</p>
 
 <h2>7. Children</h2>
 <p>
@@ -280,7 +294,7 @@
 <!-- ───────────────────────── 日本語 ───────────────────────── -->
 <section id="ja" lang="ja" class="lang-sep">
 <h1>プライバシーポリシー</h1>
-<p class="meta">思い出ゲーム箱 (Tamona) · 施行日 2026年9月14日</p>
+<p class="meta">思い出ゲーム箱 (Tamona) · 施行日 2026年9月24日</p>
 
 <div class="box">
   <strong>概要.</strong> このアプリには会員登録・ログイン・サーバーがありません。
@@ -317,6 +331,11 @@
   <tr><td>広告の間隔</td><td>初めて起動した時刻、前回の全画面広告のあとに終えたゲーム数、前回の全画面広告を表示した時刻（全画面広告を控えめにするため）</td></tr>
 </table></div>
 <p>氏名・アカウント・端末識別子などの身元情報は含まれません。</p>
+<p>
+  ただし、Android の<strong>Google 自動バックアップ</strong>がオンの場合、Android がこれらの記録を利用者の
+  Google アカウントの保存領域にバックアップすることがあります。そのため、アプリを削除して再インストールしたときや
+  新しい端末に移ったときに記録が戻ることがあります。このバックアップは Google が利用者のアカウント内で保管し、開発者は見ることができません。
+</p>
 
 <h2>4. 第三者のサービス</h2>
 
@@ -325,7 +344,7 @@
   このアプリはホーム画面とゲーム画面のいちばん上に<strong>バナー広告</strong>を表示します。
   また、1ゲームを終えて結果画面のボタンを押したあとに、ときどき（3ゲームに1回以下、前の広告から5分以上あけて）
   画面全体に表示される<strong>全画面広告（インタースティシャル広告）</strong>が出ることがあり、広告の閉じるボタンで閉じられます。
-  ゲームの途中やアプリの起動時には全画面広告は出ません。
+  アプリを初めて起動した日（初回起動から24時間）、ゲームの途中、アプリの起動時には全画面広告は出ません。
   「広告を消す」を購入すると、バナー広告と全画面広告の両方が消えます。
 </p>
 <p>
@@ -349,7 +368,7 @@
 <p>
   アプリ内で購入できるのは<strong>「広告を消す」</strong>ひとつだけです。一度買えば終わりで、定期購入ではありません。
   決済はすべて Google Play が行い、<strong>開発者がカード番号や支払い情報を受け取ることはありません。</strong>
-  アプリは Google にこの商品を購入済みかどうかだけを確認します。
+  アプリは Google にこの商品を購入済みかどうかだけを確認し、オフライン時のために購入の記録だけを端末内に残します。
 </p>
 
 <h2>5. 権限</h2>
@@ -358,8 +377,8 @@
   <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>広告の読み込みと購入の確認</td></tr>
   <tr><td><code>com.android.vending.BILLING</code></td><td>Google Play 決済</td></tr>
   <tr><td><code>VIBRATE</code></td><td>ボタンを押したときの振動</td></tr>
-  <tr><td><code>MODIFY_AUDIO_SETTINGS</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>効果音・BGM の再生（音声・広告ライブラリが使うシステム権限）</td></tr>
-  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code></td><td>Google AdMob の広告 ID・Android 広告サービス</td></tr>
+  <tr><td><code>MODIFY_AUDIO_SETTINGS</code></td><td>効果音・BGM の音量調整</td></tr>
+  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>広告・決済ライブラリが使う権限（広告 ID、Android 広告サービス、画面をつけたままにする、バックグラウンド処理）。Google AdMob と Google Play 決済が広告の表示と購入の処理に使うもので、アプリが直接使うことはありません</td></tr>
 </table></div>
 <p>カメラ・マイク・連絡先・写真・位置情報の権限は求めません。</p>
 
@@ -368,8 +387,9 @@
 <ul>
   <li><strong>アプリをアンインストールする</strong> — 保存内容も一緒に消えます。</li>
   <li><strong>設定 &gt; アプリ &gt; 思い出ゲーム箱 &gt; ストレージ &gt; データを消去</strong> — アプリは残し、記録だけを消します。</li>
+  <li><strong>Google 自動バックアップ</strong> — バックアップがオンの場合、再インストールしたときに記録が戻ることがあります。望まない場合は Android の<em>設定 &gt; Google &gt; バックアップ</em>でオフにするか、アプリ内の設定で先に記録を消してください。</li>
 </ul>
-<p>開発者は利用者のデータを保管していないため、削除を依頼する対象はありません。Google が扱った広告・決済の情報は Google のポリシーに従います。</p>
+<p>開発者は利用者のデータを保管していないため、削除を依頼する対象はありません。Google が扱った広告・決済の情報と Google アカウントのバックアップは Google のポリシーに従います。</p>
 
 <h2>7. 子どもについて</h2>
 <p>
@@ -388,7 +408,7 @@
 <!-- ───────────────────────── 繁體中文 ───────────────────────── -->
 <section id="zh-Hant" lang="zh-Hant" class="lang-sep">
 <h1>隱私權政策</h1>
-<p class="meta">懷舊遊戲百寶箱 (Tamona) · 生效日期 2026年9月14日</p>
+<p class="meta">懷舊遊戲百寶箱 (Tamona) · 生效日期 2026年9月24日</p>
 
 <div class="box">
   <strong>摘要.</strong> 本應用程式沒有會員註冊、登入或伺服器。遊戲紀錄與設定只儲存在您的裝置中，
@@ -424,6 +444,10 @@
   <tr><td>廣告間隔</td><td>第一次開啟的時間、上次全螢幕廣告後玩完的局數、上次顯示全螢幕廣告的時間（用來讓全螢幕廣告少出現）</td></tr>
 </table></div>
 <p>其中不包含姓名、帳號或裝置識別碼等身分資訊。</p>
+<p>
+  不過，如果 Android 的<strong>Google 自動備份</strong>已開啟，Android 可能會把這些紀錄備份到您的 Google 帳戶儲存空間。
+  因此，解除安裝後重新安裝或換到新裝置時，紀錄可能會恢復。這份備份由 Google 保存在您的帳戶中，開發者無法查看。
+</p>
 
 <h2>4. 第三方服務</h2>
 
@@ -432,7 +456,7 @@
   本應用程式在主畫面與遊戲畫面的最上方顯示<strong>橫幅廣告</strong>。
   此外，玩完一局並按下結果畫面的按鈕後，偶爾（每三局最多一次，且與上一次廣告相隔五分鐘以上）
   可能出現覆蓋整個畫面的<strong>全螢幕廣告（插頁式廣告）</strong>，可用廣告上的關閉按鈕關閉。
-  遊戲進行中或開啟應用程式時不會出現全螢幕廣告。
+  第一次開啟應用程式的當天（首次開啟後24小時內）、遊戲進行中或開啟應用程式時，都不會出現全螢幕廣告。
   購買「移除廣告」後，橫幅廣告與全螢幕廣告都會消失。
 </p>
 <p>
@@ -456,7 +480,7 @@
 <p>
   應用程式內只販售一項商品：<strong>「移除廣告」</strong>。一次購買，不是訂閱。
   付款完全由 Google Play 處理，<strong>開發者不會取得卡號或付款資訊。</strong>
-  應用程式只向 Google 確認是否已購買此商品。
+  應用程式只向 Google 確認是否已購買此商品，並只在裝置中留下購買紀錄，供離線時使用。
 </p>
 
 <h2>5. 權限</h2>
@@ -465,8 +489,8 @@
   <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>載入廣告與確認購買</td></tr>
   <tr><td><code>com.android.vending.BILLING</code></td><td>Google Play 付款</td></tr>
   <tr><td><code>VIBRATE</code></td><td>按下按鈕時的震動</td></tr>
-  <tr><td><code>MODIFY_AUDIO_SETTINGS</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>播放音效與背景音樂（音訊與廣告程式庫使用的系統權限）</td></tr>
-  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code></td><td>Google AdMob 的廣告 ID 與 Android 廣告服務</td></tr>
+  <tr><td><code>MODIFY_AUDIO_SETTINGS</code></td><td>調整音效與背景音樂的音量</td></tr>
+  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>廣告與付款程式庫使用的權限（廣告 ID、Android 廣告服務、保持螢幕開啟、背景作業）。由 Google AdMob 與 Google Play 付款用於顯示廣告與處理購買，應用程式本身不會直接使用</td></tr>
 </table></div>
 <p>不要求相機、麥克風、聯絡人、照片或位置權限。</p>
 
@@ -475,8 +499,9 @@
 <ul>
   <li><strong>解除安裝應用程式</strong> — 儲存的資料會一併刪除。</li>
   <li><strong>設定 &gt; 應用程式 &gt; 懷舊遊戲百寶箱 &gt; 儲存空間 &gt; 清除資料</strong> — 保留應用程式，只清除紀錄。</li>
+  <li><strong>Google 自動備份</strong> — 若備份已開啟，重新安裝時紀錄可能會恢復。若不希望如此，請在 Android 的<em>設定 &gt; Google &gt; 備份</em>關閉，或先在應用程式內的設定清除紀錄。</li>
 </ul>
-<p>開發者沒有保存任何使用者資料，因此沒有需要請求刪除的對象。Google 處理的廣告與付款資訊依 Google 的政策辦理。</p>
+<p>開發者沒有保存任何使用者資料，因此沒有需要請求刪除的對象。Google 處理的廣告與付款資訊，以及 Google 帳戶中的備份，依 Google 的政策辦理。</p>
 
 <h2>7. 關於兒童</h2>
 <p>
@@ -495,7 +520,7 @@
 <!-- ───────────────────────── Español ───────────────────────── -->
 <section id="es" lang="es" class="lang-sep">
 <h1>Política de privacidad</h1>
-<p class="meta">Tamona · Vigente desde el 14 de septiembre de 2026</p>
+<p class="meta">Tamona · Vigente desde el 24 de septiembre de 2026</p>
 
 <div class="box">
   <strong>Resumen.</strong> Esta aplicación no tiene registro, inicio de sesión ni servidor.
@@ -532,6 +557,11 @@
   <tr><td>Intervalo de anuncios</td><td>Cuándo se abrió la aplicación por primera vez, partidas terminadas desde el último anuncio a pantalla completa y cuándo se mostró (para que esos anuncios sean poco frecuentes)</td></tr>
 </table></div>
 <p>No incluye nombres, cuentas ni identificadores del dispositivo.</p>
+<p>
+  Sin embargo, si la <strong>copia de seguridad automática de Google</strong> de Android está activada, Android
+  puede guardar una copia de estos datos en el almacenamiento de tu cuenta de Google, de modo que pueden volver
+  si reinstalas la aplicación o cambias de dispositivo. Google guarda esa copia en tu cuenta y el desarrollador no puede verla.
+</p>
 
 <h2>4. Servicios de terceros</h2>
 
@@ -541,8 +571,8 @@
   de inicio y de las pantallas de juego. Además, después de terminar una partida y pulsar un botón
   en la pantalla de resultados, a veces puede aparecer un <strong>anuncio a pantalla completa
   (intersticial)</strong> (como máximo una vez cada tres partidas y con al menos cinco minutos
-  de separación), que puedes cerrar con su botón de cierre. Nunca aparece durante una partida ni
-  al abrir la aplicación. Si compras «Quitar anuncios», desaparecen tanto los banners como los
+  de separación), que puedes cerrar con su botón de cierre. Nunca aparece el primer día después de
+  abrir la aplicación por primera vez (las primeras 24 horas), durante una partida ni al abrir la aplicación. Si compras «Quitar anuncios», desaparecen tanto los banners como los
   anuncios a pantalla completa.
 </p>
 <p>
@@ -571,7 +601,8 @@
   La aplicación vende un único artículo, <strong>«Quitar anuncios»</strong>. Es una compra única,
   no una suscripción. El pago lo gestiona por completo Google Play;
   <strong>el desarrollador nunca recibe números de tarjeta ni datos de pago.</strong>
-  La aplicación solo pregunta a Google si este artículo se ha comprado.
+  La aplicación solo pregunta a Google si este artículo se ha comprado y guarda únicamente ese registro
+  en tu dispositivo para cuando no hay conexión.
 </p>
 
 <h2>5. Permisos</h2>
@@ -580,8 +611,8 @@
   <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Cargar anuncios y confirmar compras</td></tr>
   <tr><td><code>com.android.vending.BILLING</code></td><td>Google Play Billing</td></tr>
   <tr><td><code>VIBRATE</code></td><td>Vibración al pulsar botones</td></tr>
-  <tr><td><code>MODIFY_AUDIO_SETTINGS</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Reproducir efectos de sonido y música (permisos del sistema que usan las bibliotecas de audio y de anuncios)</td></tr>
-  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code></td><td>ID de publicidad y servicios de anuncios de Android para Google AdMob</td></tr>
+  <tr><td><code>MODIFY_AUDIO_SETTINGS</code></td><td>Ajustar el volumen de los efectos de sonido y la música</td></tr>
+  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Permisos de las bibliotecas de anuncios y pagos (ID de publicidad, servicios de anuncios de Android, mantener el dispositivo activo, tareas en segundo plano). Google AdMob y Google Play Billing los usan para mostrar anuncios y procesar la compra; la aplicación no los usa directamente</td></tr>
 </table></div>
 <p>No se piden permisos de cámara, micrófono, contactos, fotos ni ubicación.</p>
 
@@ -590,8 +621,9 @@
 <ul>
   <li><strong>Desinstalando la aplicación</strong> — los datos guardados se borran con ella.</li>
   <li><strong>Ajustes &gt; Aplicaciones &gt; Tamona &gt; Almacenamiento &gt; Borrar datos</strong> — conserva la aplicación y reinicia los récords.</li>
+  <li><strong>Copia de seguridad automática de Google</strong> — si está activada, tus récords pueden volver al reinstalar la aplicación. Si no lo deseas, desactívala en Android, en <em>Ajustes &gt; Google &gt; Copia de seguridad</em>, o borra antes los récords desde los ajustes de la aplicación.</li>
 </ul>
-<p>El desarrollador no guarda ningún dato tuyo, así que no hay nada cuya eliminación solicitar. Los datos de anuncios y pagos tratados por Google se rigen por las políticas de Google.</p>
+<p>El desarrollador no guarda ningún dato tuyo, así que no hay nada cuya eliminación solicitar. Los datos de anuncios y pagos tratados por Google y las copias de seguridad de tu cuenta de Google se rigen por las políticas de Google.</p>
 
 <h2>7. Menores</h2>
 <p>
@@ -611,7 +643,7 @@
 <!-- ───────────────────────── Deutsch ───────────────────────── -->
 <section id="de" lang="de" class="lang-sep">
 <h1>Datenschutzerklärung</h1>
-<p class="meta">Tamona · Gültig ab 14. September 2026</p>
+<p class="meta">Tamona · Gültig ab 24. September 2026</p>
 
 <div class="box">
   <strong>Kurz gesagt.</strong> Diese App hat keine Registrierung, keine Anmeldung und keinen
@@ -649,6 +681,11 @@
   <tr><td>Anzeigenabstand</td><td>Zeitpunkt des ersten Starts, seit der letzten bildschirmfüllenden Anzeige beendete Spiele und wann diese angezeigt wurde (damit solche Anzeigen selten bleiben)</td></tr>
 </table></div>
 <p>Namen, Konten oder Gerätekennungen sind nicht enthalten.</p>
+<p>
+  Ist jedoch die <strong>automatische Google-Sicherung</strong> von Android eingeschaltet, kann Android diese
+  Daten im Speicher Ihres Google-Kontos sichern. Sie können dann nach einer Neuinstallation der App oder auf einem
+  neuen Gerät wiederkommen. Diese Sicherung bewahrt Google in Ihrem Konto auf; der Entwickler kann sie nicht einsehen.
+</p>
 
 <h2>4. Dienste Dritter</h2>
 
@@ -658,8 +695,8 @@
   Spielbildschirmen. Nachdem Sie ein Spiel beendet und auf dem Ergebnisbildschirm eine
   Schaltfläche gedrückt haben, kann gelegentlich eine <strong>bildschirmfüllende Anzeige
   (Interstitial)</strong> erscheinen (höchstens einmal alle drei Spiele und mit mindestens fünf
-  Minuten Abstand), die Sie über ihre Schließen-Schaltfläche schließen können. Während eines
-  Spiels oder beim Start der App erscheint sie nie. Mit „Werbung entfernen“ verschwinden sowohl
+  Minuten Abstand), die Sie über ihre Schließen-Schaltfläche schließen können. Am ersten Tag nach dem
+  ersten Öffnen der App (in den ersten 24 Stunden), während eines Spiels oder beim Start der App erscheint sie nie. Mit „Werbung entfernen“ verschwinden sowohl
   Banner- als auch bildschirmfüllende Anzeigen.
 </p>
 <p>
@@ -688,7 +725,8 @@
   Die App verkauft einen einzigen Artikel: <strong>„Werbung entfernen“</strong>. Es ist ein
   einmaliger Kauf, kein Abo. Die Zahlung wird vollständig von Google Play abgewickelt;
   <strong>der Entwickler erhält niemals Kartennummern oder Zahlungsdaten.</strong>
-  Die App fragt bei Google nur ab, ob dieser Artikel gekauft wurde.
+  Die App fragt bei Google nur ab, ob dieser Artikel gekauft wurde, und speichert nur diesen Kaufvermerk
+  auf Ihrem Gerät, damit er auch ohne Internet verfügbar ist.
 </p>
 
 <h2>5. Berechtigungen</h2>
@@ -697,8 +735,8 @@
   <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Anzeigen laden und Käufe bestätigen</td></tr>
   <tr><td><code>com.android.vending.BILLING</code></td><td>Google Play Billing</td></tr>
   <tr><td><code>VIBRATE</code></td><td>Vibration beim Tippen auf Tasten</td></tr>
-  <tr><td><code>MODIFY_AUDIO_SETTINGS</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Wiedergabe von Soundeffekten und Musik (Systemberechtigungen der Audio- und Werbebibliotheken)</td></tr>
-  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code></td><td>Werbe-ID und Android-Werbedienste für Google AdMob</td></tr>
+  <tr><td><code>MODIFY_AUDIO_SETTINGS</code></td><td>Lautstärke von Soundeffekten und Musik einstellen</td></tr>
+  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Berechtigungen der Werbe- und Zahlungsbibliotheken (Werbe-ID, Android-Werbedienste, Gerät wach halten, Hintergrundaufgaben). Google AdMob und Google Play Billing nutzen sie, um Anzeigen zu zeigen und den Kauf abzuwickeln; die App selbst nutzt sie nicht direkt</td></tr>
 </table></div>
 <p>Kamera, Mikrofon, Kontakte, Fotos und Standort werden nicht angefordert.</p>
 
@@ -707,8 +745,9 @@
 <ul>
   <li><strong>Deinstallieren der App</strong> — die gespeicherten Daten werden mit gelöscht.</li>
   <li><strong>Einstellungen &gt; Apps &gt; Tamona &gt; Speicher &gt; Daten löschen</strong> — die App bleibt, die Spielstände werden zurückgesetzt.</li>
+  <li><strong>Automatische Google-Sicherung</strong> — ist sie eingeschaltet, können Ihre Spielstände nach einer Neuinstallation wiederkommen. Wenn Sie das nicht möchten, schalten Sie sie unter Android in <em>Einstellungen &gt; Google &gt; Sicherung</em> aus oder löschen Sie die Spielstände vorher in den Einstellungen der App.</li>
 </ul>
-<p>Der Entwickler speichert keine Ihrer Daten; es gibt daher nichts, dessen Löschung Sie beantragen müssten. Von Google verarbeitete Werbe- und Zahlungsdaten unterliegen den Richtlinien von Google.</p>
+<p>Der Entwickler speichert keine Ihrer Daten; es gibt daher nichts, dessen Löschung Sie beantragen müssten. Von Google verarbeitete Werbe- und Zahlungsdaten sowie Sicherungen in Ihrem Google-Konto unterliegen den Richtlinien von Google.</p>
 
 <h2>7. Kinder</h2>
 <p>
@@ -728,7 +767,7 @@
 <!-- ───────────────────────── Français ───────────────────────── -->
 <section id="fr" lang="fr" class="lang-sep">
 <h1>Politique de confidentialité</h1>
-<p class="meta">Tamona · En vigueur depuis le 14 septembre 2026</p>
+<p class="meta">Tamona · En vigueur depuis le 24 septembre 2026</p>
 
 <div class="box">
   <strong>En bref.</strong> Cette application n’a ni inscription, ni connexion, ni serveur.
@@ -766,6 +805,11 @@
   <tr><td>Espacement des pubs</td><td>Date de la première ouverture, parties terminées depuis la dernière publicité plein écran et moment où elle a été affichée (pour que ces publicités restent rares)</td></tr>
 </table></div>
 <p>Aucun nom, compte ou identifiant d’appareil n’y figure.</p>
+<p>
+  Toutefois, si la <strong>sauvegarde automatique Google</strong> d’Android est activée, Android peut sauvegarder
+  ces données dans l’espace de stockage de votre compte Google ; elles peuvent donc revenir si vous réinstallez
+  l’application ou changez d’appareil. Cette sauvegarde est conservée par Google dans votre compte et le développeur ne peut pas la voir.
+</p>
 
 <h2>4. Services tiers</h2>
 
@@ -775,8 +819,8 @@
   et des écrans de jeu. Après une partie, lorsque vous appuyez sur un bouton de l’écran de
   résultat, une <strong>publicité plein écran (interstitielle)</strong> peut parfois s’afficher
   (au plus une fois toutes les trois parties et à au moins cinq minutes d’intervalle) ; vous
-  pouvez la fermer avec son bouton de fermeture. Elle n’apparaît jamais pendant une partie ni
-  au lancement de l’application. L’achat de « Supprimer les pubs » retire à la fois les bannières
+  pouvez la fermer avec son bouton de fermeture. Elle n’apparaît jamais le premier jour après la
+  première ouverture de l’application (les 24 premières heures), pendant une partie ni au lancement de l’application. L’achat de « Supprimer les pubs » retire à la fois les bannières
   et les publicités plein écran.
 </p>
 <p>
@@ -807,7 +851,8 @@
   L’application vend un seul article, <strong>« Supprimer les pubs »</strong>. C’est un achat
   unique, pas un abonnement. Le paiement est entièrement géré par Google Play ;
   <strong>le développeur ne reçoit jamais de numéro de carte ni de données de paiement.</strong>
-  L’application demande seulement à Google si cet article a été acheté.
+  L’application demande seulement à Google si cet article a été acheté et ne garde que cette trace
+  d’achat sur votre appareil, pour l’utilisation hors ligne.
 </p>
 
 <h2>5. Autorisations</h2>
@@ -816,8 +861,8 @@
   <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Charger les annonces et confirmer les achats</td></tr>
   <tr><td><code>com.android.vending.BILLING</code></td><td>Google Play Billing</td></tr>
   <tr><td><code>VIBRATE</code></td><td>Vibration lorsque vous touchez un bouton</td></tr>
-  <tr><td><code>MODIFY_AUDIO_SETTINGS</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Lecture des effets sonores et de la musique (autorisations système utilisées par les bibliothèques audio et publicitaires)</td></tr>
-  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code></td><td>Identifiant publicitaire et services publicitaires Android pour Google AdMob</td></tr>
+  <tr><td><code>MODIFY_AUDIO_SETTINGS</code></td><td>Réglage du volume des effets sonores et de la musique</td></tr>
+  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Autorisations des bibliothèques de publicité et de paiement (identifiant publicitaire, services publicitaires Android, maintien de l’appareil éveillé, tâches en arrière-plan). Google AdMob et Google Play Billing les utilisent pour afficher les annonces et traiter l’achat ; l’application ne les utilise pas directement</td></tr>
 </table></div>
 <p>Aucune autorisation d’accès à l’appareil photo, au micro, aux contacts, aux photos ou à la position n’est demandée.</p>
 
@@ -826,8 +871,9 @@
 <ul>
   <li><strong>En désinstallant l’application</strong> — les données enregistrées sont effacées avec elle.</li>
   <li><strong>Paramètres &gt; Applications &gt; Tamona &gt; Stockage &gt; Effacer les données</strong> — l’application reste, les résultats sont remis à zéro.</li>
+  <li><strong>Sauvegarde automatique Google</strong> — si elle est activée, vos résultats peuvent revenir lors d’une réinstallation. Si vous ne le souhaitez pas, désactivez-la dans Android, sous <em>Paramètres &gt; Google &gt; Sauvegarde</em>, ou effacez d’abord les résultats dans les réglages de l’application.</li>
 </ul>
-<p>Le développeur ne conserve aucune de vos données ; il n’y a donc rien dont demander la suppression. Les données publicitaires et de paiement traitées par Google relèvent des règles de Google.</p>
+<p>Le développeur ne conserve aucune de vos données ; il n’y a donc rien dont demander la suppression. Les données publicitaires et de paiement traitées par Google, ainsi que les sauvegardes de votre compte Google, relèvent des règles de Google.</p>
 
 <h2>7. Enfants</h2>
 <p>
@@ -847,7 +893,7 @@
 <!-- ───────────────────────── Português (Brasil) ───────────────────────── -->
 <section id="pt-BR" lang="pt-BR" class="lang-sep">
 <h1>Política de Privacidade</h1>
-<p class="meta">Tamona · Em vigor desde 14 de setembro de 2026</p>
+<p class="meta">Tamona · Em vigor desde 24 de setembro de 2026</p>
 
 <div class="box">
   <strong>Resumo.</strong> Este aplicativo não tem cadastro, login nem servidor. Seus recordes e
@@ -884,6 +930,11 @@
   <tr><td>Intervalo de anúncios</td><td>Quando o aplicativo foi aberto pela primeira vez, partidas terminadas desde o último anúncio em tela cheia e quando ele foi exibido (para manter esses anúncios raros)</td></tr>
 </table></div>
 <p>Não inclui nomes, contas nem identificadores do aparelho.</p>
+<p>
+  Porém, se o <strong>backup automático do Google</strong> do Android estiver ativado, o Android pode fazer backup
+  desses dados no armazenamento da sua Conta do Google, e eles podem voltar se você reinstalar o aplicativo ou
+  trocar de aparelho. Esse backup fica guardado pelo Google na sua conta, e o desenvolvedor não consegue vê-lo.
+</p>
 
 <h2>4. Serviços de terceiros</h2>
 
@@ -893,7 +944,8 @@
   telas de jogo. Depois de terminar uma partida e tocar em um botão na tela de resultado, às
   vezes pode aparecer um <strong>anúncio em tela cheia (intersticial)</strong> (no máximo uma vez a
   cada três partidas e com pelo menos cinco minutos de intervalo), que você pode fechar pelo
-  botão de fechar do anúncio. Ele nunca aparece durante uma partida nem ao abrir o aplicativo.
+  botão de fechar do anúncio. Ele nunca aparece no primeiro dia depois de abrir o aplicativo pela
+  primeira vez (as primeiras 24 horas), durante uma partida nem ao abrir o aplicativo.
   Ao comprar “Remover anúncios”, somem tanto os banners quanto os anúncios em tela cheia.
 </p>
 <p>
@@ -922,7 +974,8 @@
   O aplicativo vende um único item, <strong>“Remover anúncios”</strong>. É uma compra única, não
   uma assinatura. O pagamento é feito inteiramente pelo Google Play;
   <strong>o desenvolvedor nunca recebe números de cartão nem dados de pagamento.</strong>
-  O aplicativo apenas pergunta ao Google se esse item foi comprado.
+  O aplicativo apenas pergunta ao Google se esse item foi comprado e guarda só esse registro no seu
+  aparelho, para quando estiver sem internet.
 </p>
 
 <h2>5. Permissões</h2>
@@ -931,8 +984,8 @@
   <tr><td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td><td>Carregar anúncios e confirmar compras</td></tr>
   <tr><td><code>com.android.vending.BILLING</code></td><td>Google Play Billing</td></tr>
   <tr><td><code>VIBRATE</code></td><td>Vibração ao tocar nos botões</td></tr>
-  <tr><td><code>MODIFY_AUDIO_SETTINGS</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Tocar efeitos sonoros e música (permissões do sistema usadas pelas bibliotecas de áudio e de anúncios)</td></tr>
-  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code></td><td>ID de publicidade e serviços de anúncios do Android para o Google AdMob</td></tr>
+  <tr><td><code>MODIFY_AUDIO_SETTINGS</code></td><td>Ajustar o volume dos efeitos sonoros e da música</td></tr>
+  <tr><td><code>AD_ID</code>, <code>ACCESS_ADSERVICES_*</code>, <code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code></td><td>Permissões das bibliotecas de anúncios e de pagamento (ID de publicidade, serviços de anúncios do Android, manter o aparelho ativo, tarefas em segundo plano). O Google AdMob e o Google Play Billing as usam para exibir anúncios e processar a compra; o aplicativo não as usa diretamente</td></tr>
 </table></div>
 <p>Não são pedidas permissões de câmera, microfone, contatos, fotos ou localização.</p>
 
@@ -941,8 +994,9 @@
 <ul>
   <li><strong>Desinstalando o aplicativo</strong> — os dados salvos são apagados junto.</li>
   <li><strong>Configurações &gt; Apps &gt; Tamona &gt; Armazenamento &gt; Limpar dados</strong> — mantém o aplicativo e zera os recordes.</li>
+  <li><strong>Backup automático do Google</strong> — se estiver ativado, seus recordes podem voltar ao reinstalar o aplicativo. Se não quiser isso, desative-o no Android, em <em>Configurações &gt; Google &gt; Backup</em>, ou apague antes os recordes nas configurações do aplicativo.</li>
 </ul>
-<p>O desenvolvedor não guarda nenhum dado seu, então não há o que pedir para excluir. Os dados de anúncios e pagamentos tratados pelo Google seguem as políticas do Google.</p>
+<p>O desenvolvedor não guarda nenhum dado seu, então não há o que pedir para excluir. Os dados de anúncios e pagamentos tratados pelo Google e os backups da sua Conta do Google seguem as políticas do Google.</p>
 
 <h2>7. Crianças</h2>
 <p>
